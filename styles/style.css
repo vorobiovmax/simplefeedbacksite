@@ -1,0 +1,413 @@
+/* body */
+body {
+    margin: 0;
+    background: url('/img/flamingo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* a */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* textarea */
+textarea {
+    height: 90px;
+    resize: none;
+}
+
+.page_title {
+    text-align: center;
+    width: 100%;
+    color: #555555;
+}
+
+.page_title > h1 {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.page_title > h1:after {
+    content: "";
+    display: block;
+    margin: 5px auto;
+    width: 95%;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, rgba(116, 9, 121, 0.7) 35%, rgba(0, 212, 255, 0.7) 100%);
+}
+
+#logout {
+    position: absolute;
+    top: 9px;
+    right: 16px;
+    width: 120px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    text-decoration: none;
+    padding: 4px 8px;
+    background: linear-gradient(90deg, rgba(245, 2, 2, 0.7) 0%, rgba(231, 0, 76, 0.7) 35%, rgba(151, 0, 83, 0.7) 100%);
+    transition: .1s ease-in-out;
+}
+
+#logout:hover {
+    background: linear-gradient(90deg, rgba(177, 0, 0, 0.7) 0%, rgba(160, 0, 54, 0.7) 35%, rgba(95, 0, 52, 0.7) 100%);
+}
+
+#logout:active {
+    color: #c1c1c1;
+    box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.6) inset;
+}
+
+/* Main container */
+.container {
+    margin: 100px auto;
+    display: block;
+    width: 920px;
+}
+
+/* login & feedback forms */
+#login,
+#feedback {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, rgba(116, 9, 121, 0.5) 35%, rgba(0, 212, 255, 0.5) 100%);
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    word-wrap: break-word;
+    padding: 15px 0;
+    box-shadow: 12px 10px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+#login {
+    width: 320px;
+}
+
+#feedback {
+    width: 400px;
+}
+
+/* login & feedback form titles */
+#login > .title,
+#feedback > .title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#login > .title:after,
+#feedback > .title:after {
+    display: block;
+    content: '';
+    margin: 0 auto;
+    width: 190px;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(116, 9, 121, 1) 65%, rgba(2, 0, 36, 1) 100%);
+}
+
+/* Error blocks */
+.errors_block {
+    width: 100%;
+    border-radius: 6px;
+    border: 2px solid red;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+.errors_block > span {
+    display: block;
+}
+
+/* Error blocks */
+.success_block {
+    width: 100%;
+    border-radius: 6px;
+    border: 2px solid green;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+
+.success_block > span {
+    display: block;
+}
+
+/* login & feedback form content containers */
+.content {
+    margin: 10px auto;
+}
+
+#login > .content {
+    width: 195px;
+}
+
+#feedback > .content {
+    width: 275px;
+}
+
+/* login & feedback text blocks */
+.input_text_block {
+    text-align: center;
+}
+
+.input_text_block > input,
+.input_text_block > textarea {
+    width: 95%;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: rgba(0, 0, 0, .7);
+    transition: all 0.1s ease-in-out;
+}
+
+.input_text_block > input:focus,
+.input_text_block > textarea:focus {
+    background: rgba(0, 0, 0, .45);
+    outline: none;
+}
+
+/* login & feedback checkbox block */
+.input_checkbox_block {
+    position: relative;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.input_checkbox_block > input {
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    background-color: rgb(3, 3, 3);
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-top: 10px;
+}
+
+.input_checkbox_block > input:checked:after {
+    content: '\2714';
+    font-size: 18px;
+    position: absolute;
+    top: -4px;
+    left: 1px;
+    color: #fff;
+}
+
+/* login & feedback form buttons */
+.input_btn {
+    text-align: center;
+}
+
+.input_btn > input {
+    position: relative;
+    color: white;
+    font-size: 24px;
+    width: inherit;
+    border-radius: 6px;
+    border: none;
+    padding: 4px 8px;
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0.8) 0%, rgba(116, 9, 121, 0.8) 65%, rgba(2, 0, 36, 0.8) 100%);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    transition: all 0.1s ease-in-out;
+}
+
+.input_btn > input:hover {
+    background: linear-gradient(90deg, rgba(0, 141, 147, 0.8) 0%, rgba(74, 5, 78, 0.8) 65%, rgba(2, 0, 12, 0.8) 100%);
+}
+
+.input_btn > input:active {
+    color: #c1c1c1;
+    box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.6) inset;
+}
+
+/* feedback form radio & checkbox blocks */
+.input_radio_block,
+.input_checkbox_block {
+    display: inline-block;
+    vertical-align: top;
+    color: #ffffff;
+    font-size: 16px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    margin: 15px 15px 20px 5px;
+}
+
+/* feedback form radio inputs */
+.input_radio_block > input {
+    margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgb(3, 3, 3);
+    width: 16px;
+    height: 15px;
+}
+
+.input_radio_block > input:checked:after {
+    content: '\272A';
+    font-size: 22px;
+    position: absolute;
+    top: -6px;
+    left: -1px;
+    color: #fff;
+}
+
+/* feedback form droplist block */
+.input_droplist_block {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.input_droplist_block > .placeholder {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.input_droplist_block > select {
+    position: relative;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    transition: all .1s ease-in-out;
+}
+
+.input_droplist_block > select:hover,
+.input_droplist_block > select:focus {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* Miniadmin stories table */
+.stories-table {
+    border: 3px solid rgba(0, 0, 0, 0.51);
+    border-radius: 22px;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+    max-width: calc(100% - 2em);
+    margin: 1em auto;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgba(236, 71, 130, 0.3);
+    color: white;
+}
+
+.stories-table > .table-title {
+    font-size: 26px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.stories-table > table {
+    width: 100%;
+    word-break: break-all;
+}
+
+.stories-table > table td, .stories-table > table th {
+    color: #534949;
+    padding: 10px;
+}
+
+.stories-table > table td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.stories-table > table td:last-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.stories-table > table th {
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.51);
+}
+
+.stories-table > table tr {
+    transition: all .12s ease-in-out;
+}
+
+/* Miniadmin ajax refresh button */
+.table-refresh {
+    position: absolute;
+    top: 150px;
+    right: 360px;
+    color: white;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    padding: 4px 8px;
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0.8) 0%, rgba(116, 9, 121, 0.8) 65%, rgba(2, 0, 36, 0.8) 100%);
+    transition: all 0.06s ease-in-out;
+}
+
+.table-refresh:hover {
+    background: linear-gradient(90deg, rgba(0, 141, 147, 0.8) 0%, rgba(74, 5, 78, 0.8) 65%, rgba(2, 0, 12, 0.8) 100%);
+}
+
+.table-refresh:hover:active {
+    color: #c1c1c1;
+    box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.6) inset;
+}
+
+/* Miniadmin edit/delete controls */
+.controls {
+    position: relative;
+}
+
+.columns-action {
+    position: absolute;
+    font-size: 16px;
+    transition: all .1s ease-in-out;
+}
+
+.columns-action.delete, .columns-action.edit {
+    left: 1px;
+}
+
+.columns-action.edit {
+    bottom: 2px;
+}
+
+.columns-action.delete {
+    top: 2px;
+}
+
+.columns-action:hover {
+    font-size: 20px;
+}
+
+.columns-action.delete:hover {
+    cursor: pointer;
+    top: 0;
+}
+
+.columns-action.edit:hover {
+    cursor: pointer;
+    bottom: 0;
+}
